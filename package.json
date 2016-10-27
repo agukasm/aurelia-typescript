@@ -1,12 +1,12 @@
 {
   "name": "aurelia-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hello World application using TypeScript, Aurelia and Webpack",
   "main": "main.ts",
   "scripts": {
     "build": "webpack"
   },
-  "author": "",
+  "author": "Mati Agukas",
   "license": "ISC",
   "devDependencies": {
     "aurelia-webpack-plugin": "^1.1.0",
