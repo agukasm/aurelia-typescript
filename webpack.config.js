@@ -1,24 +1,28 @@
 ﻿var AureliaWebPackPlugin = require('aurelia-webpack-plugin');
+var path = require('path');
 var webpack = require('webpack');
 var HtmlWebPackPlugin = require('html-webpack-plugin');
 
+const srcDir = path.resolve('src');
+const outDir = path.resolve('dist');
+
 module.exports = {
   entry: {
-    'app': [],
+    'app': [/* this array will be filled by the aurelia-webpack-plugin */],
     'aurelia': ['aurelia-bootstrapper-webpack']
   },
   output: {
-    path: './dist',
-    filename: '[name].bundle.js',
-    sourceMapFilename: '[name].bundle.js.map'
+    path: outDir,
+    filename: 'scripts/[name].bundle.js',
+    sourceMapFilename: 'scripts/[name].bundle.js.map'
   },
   resolve: {
-    extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
+    extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js']
   },
   module: {
     loaders: [
-      { test: /\.ts$/, loader: 'ts-loader', exclude: /(node_modules)/ },
-      { test: /\.html$/, loader: 'html', exclude: /(node_modules)/ }
+      { test: /\.ts$/, loader: 'ts-loader', include: srcDir },
+      { test: /\.html$/, loader: 'html', include: srcDir }
     ]
   },
   plugins: [
@@ -32,6 +36,6 @@ module.exports = {
       })
   ],
   devServer: {
-    port: 3333
+    port: 3333,
   }
 };

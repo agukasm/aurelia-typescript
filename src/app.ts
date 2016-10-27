@@ -1,5 +1,8 @@
-﻿import greeter = require('./greeter');  
+﻿import {greeter} from './greeter';
 
-var body = document.getElementsByTagName("body")[0];
-body.appendChild(document.createTextNode(greeter("world")));
-document.write("Hello shit");
+export class App {
+    heading: string = 'Welcome to the Aurelia App';
+    constructor() {
+        console.log("App.constructor");
+    }
+}

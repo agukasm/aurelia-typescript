@@ -30,11 +30,13 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="package.json" />
+    <None Include="readme.md" />
     <None Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="src\app.html" />
+    <Content Include="src\greeter.html" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\app.ts" />
     <TypeScriptCompile Include="src\greeter.ts" />
