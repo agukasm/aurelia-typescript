@@ -1,0 +1,10 @@
+﻿<template bindable="classificatorsList">
+  <h2>HTML-only</h2>
+  <p>Data is passed to child component which does not have code behind.</p>
+  <div repeat.for="c of classificatorsList">${c.value}</div>
+  <br />
+  <div>Here we show the content passed in:</div>
+  <div>
+    <content></content>
+  </div>
+</template>
