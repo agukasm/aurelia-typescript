@@ -4,7 +4,10 @@
   "description": "Hello World application using TypeScript, Aurelia and Webpack",
   "main": "main.ts",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server --history-api-fallback --inline --progress",
+    "webpack": "cross-env ./node_modules/.bin/webpack",
+    "webpack-dev-server": "cross-env ./node_modules/.bin/webpack-dev-server"
   },
   "author": "Mati Agukas",
   "license": "ISC",
@@ -13,7 +16,7 @@
     "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.24.0",
     "ts-loader": "^0.9.5",
-    "typescript": "^2.0.6",
+    "typescript": "^1.8.10",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
   },

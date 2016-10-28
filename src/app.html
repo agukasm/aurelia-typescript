@@ -1,5 +1,9 @@
 ﻿<template>
   <require from="greeter"></require>
+  <require from="classificators-list"></require>
+  <require from="classificators-list-service"></require>
   <h1>${heading}</h1>
-  <greeter firstname.bind="John" lastname.bind="Doe"></greeter>
+  <greeter first-name.one-time="'John'" last-name.one-time="'Doe'"></greeter>
+  <classificators-list classificators-list.one-time="classificators"></classificators-list>
+  <classificators-list-service></classificators-list-service>
 </template>

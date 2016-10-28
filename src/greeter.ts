@@ -1,7 +1,7 @@
 ﻿import {bindable} from 'aurelia-framework';
 export class greeter {
-    @bindable firstname: string;
-    @bindable lastname: string;
+    @bindable firstName: string;
+    @bindable lastName: string;
 
     previousValue: string = this.fullName;
 
@@ -11,7 +11,7 @@ export class greeter {
     //as well as the corresponding import above.
     //@computedFrom('firstName', 'lastName')
     get fullName(): string {
-        return `${this.firstname} ${this.lastname}`;
+        return `${this.firstName} ${this.lastName}`;
     }
 
     submit() {

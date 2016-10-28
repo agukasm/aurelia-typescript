@@ -31,17 +31,22 @@
   <ItemGroup>
     <None Include="package.json" />
     <None Include="readme.md" />
+    <None Include="resources\classificators.json" />
     <None Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="src\app.html" />
+    <TypeScriptCompile Include="src\ClassificatorFilter.ts" />
+    <TypeScriptCompile Include="src\Services\Classificator.ts" />
+    <TypeScriptCompile Include="src\Services\ClassificatorService.ts" />
     <Content Include="src\greeter.html" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\app.ts" />
     <TypeScriptCompile Include="src\greeter.ts" />
     <Content Include="webpack.config.js" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
