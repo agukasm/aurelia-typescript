@@ -1,0 +1,10 @@
+﻿<template>
+  <div>
+    <input type="text" value.bind="firstName" placeholder="First name">
+    <input type="text" value.bind="lastName" placeholder="Last name">
+    <input type="text" value.bind="fullName" disabled="disabled" placeholder="Full name">
+
+    <input type="checkbox" ref="rec">
+    <recursive if.bind="rec.checked"></recursive>
+  </div>
+</template>
