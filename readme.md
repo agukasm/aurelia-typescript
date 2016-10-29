@@ -22,15 +22,21 @@ Hello World application using TypeScript, Aurelia and Webpack
  npm install -g webpack-dev-server
  ```
 
-5. To run the app execute the following command:
+5. Run webpack
  ```
- npm start
+ webpack
  ```
- or 
+ This command builds the application bundles.
+
+5. Start webpack dev server: 
  ```
  webpack-dev-server
  ```
 
  This command starts the Webpack development server that serves the built bundles.
  
- You can now browse the app at http://localhost:3333/dist/index.html.
+ You can now browse the app at http://localhost:3333.
+
+## License
+
+MIT (http://www.opensource.org/licenses/mit-license.php)

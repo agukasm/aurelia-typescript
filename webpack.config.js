@@ -34,9 +34,13 @@ module.exports = {
       new HtmlWebPackPlugin({
         template: 'index.html',
         chunkSortMode: 'dependency'
-      })
+      }),
+      new webpack.HotModuleReplacementPlugin()
   ],
   devServer: {
-    port: 3333
+    port: 3333,
+    contentBase: "dist",
+    hot: true,
+    inline: true
   }
 };
