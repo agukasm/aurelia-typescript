@@ -19,6 +19,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js']
   },
+  devtool: "source-map",
   module: {
     loaders: [
       { test: /\.ts$/, loader: 'ts-loader', include: srcDir },
@@ -36,6 +37,6 @@ module.exports = {
       })
   ],
   devServer: {
-    port: 3333,
+    port: 3333
   }
 };
