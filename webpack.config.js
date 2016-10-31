@@ -1,10 +1,10 @@
 ﻿var AureliaWebPackPlugin = require('aurelia-webpack-plugin');
-var path = require('path');
-var webpack = require('webpack');
+var Path = require('path');
+var Webpack = require('webpack');
 var HtmlWebPackPlugin = require('html-webpack-plugin');
 
-const srcDir = path.resolve('src');
-const outDir = path.resolve('dist');
+const srcDir = Path.resolve('src');
+const outDir = Path.resolve('dist');
 
 module.exports = {
   entry: {
@@ -23,19 +23,23 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.ts$/, loader: 'ts-loader', include: srcDir },
-      { test: /\.html$/, loader: 'html', include: srcDir }
+      { test: /\.html$/, loader: 'html', include: srcDir },
+      {
+        test: /\.(png|jpe?g|gif|svg|eot|woff|woff2|ttf|css)(\?\S*)?$/,
+        loader: 'url-loader?limit=100000&name=[name].[ext]'
+      }
     ]
   },
   plugins: [
       new AureliaWebPackPlugin(),
       // To minimize your scripts (and your css, if you use the css-loader)
       //new webpack.optimize.UglifyJsPlugin(),
-      new webpack.optimize.CommonsChunkPlugin({ name: ['aurelia'] }),
+      new Webpack.optimize.CommonsChunkPlugin({ name: ['aurelia'] }),
       new HtmlWebPackPlugin({
         template: 'index.html',
         chunkSortMode: 'dependency'
       }),
-      new webpack.HotModuleReplacementPlugin()
+      new Webpack.HotModuleReplacementPlugin()
   ],
   devServer: {
     port: 3333,

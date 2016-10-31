@@ -1,4 +1,7 @@
-﻿export class App {
+﻿import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import '../node_modules/font-awesome/css/font-awesome.css';
+
+export class App {
   heading: string = 'Welcome to the Aurelia App';
   classificators: any = [
     { value: "classificator1" },
