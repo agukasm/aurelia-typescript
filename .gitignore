@@ -1,4 +1,5 @@
 /.vs
 /node_modules
-.awcache
-dist*/
+npm-debug.log*
+/dist
+/.awcache

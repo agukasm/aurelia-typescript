@@ -1,7 +1,4 @@
-﻿import '../node_modules/bootstrap/dist/css/bootstrap.css';
-import '../node_modules/font-awesome/css/font-awesome.css';
-
-export class App {
+﻿export class App {
   heading: string = 'Welcome to the Aurelia App';
   classificators: any = [
     { value: "classificator1" },
@@ -9,4 +6,5 @@ export class App {
     { value: "classificator3" },
     { value: "classificator4" }
   ];
+  birthDate: string = "02.03.1978";
 }

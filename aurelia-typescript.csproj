@@ -38,11 +38,14 @@
     <Content Include="src\app.html" />
     <Content Include="src\classificators-list-nocode.html" />
     <Content Include="src\classificators-list-service.html" />
+    <Content Include="src\date-picker.html" />
     <Content Include="src\greeter.html" />
     <Content Include="src\classificators-list.html" />
+    <TypeScriptCompile Include="custom_typings\fetch.d.ts" />
     <TypeScriptCompile Include="src\classificators-list-service.ts" />
     <TypeScriptCompile Include="src\classificators.ts" />
     <TypeScriptCompile Include="src\classificators-list.ts" />
+    <TypeScriptCompile Include="src\date-picker.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\app.ts" />
     <TypeScriptCompile Include="src\greeter.ts" />

@@ -1,14 +1,25 @@
-﻿{
+{
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
+    "target": "es2015",
+    "module": "es2015",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
-    "sourceMap": true
+    "sourceMap": true,
+    "allowJs": true
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "doTypeCheck": true,
+    "forkChecker": true,
+    "useBabel": false,
+    "useCache": true
   },
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "release",
+    "index.js",
+    "webpack.config.js",
+    "config"
   ]
 }
